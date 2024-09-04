@@ -39,8 +39,6 @@ void draw() {
   //gris - ben
   strokeWeight(3);
   stroke(1);
-  line(90, 350, mouseX, mouseY);
-  line(55, 350, mouseX, mouseY);
 
   //gris - fødder
   stroke(1);
@@ -61,12 +59,11 @@ void draw() {
   ellipseMode(CENTER);
   rectMode(CENTER);
   stroke(0);
-  fill(95, 75, 50);
+  fill(54,69,79);
   rect(80, 200, 20, 100);
-  fill(95, 75, 50);
+  fill(54,69,79);
   ellipse(50, 250, 40, 40);
-  fill(95, 75, 50);
+  fill(54,69,79);
   ellipse(110, 250, 40, 40);
-  line(80, 150, 80, 175);
-  line(70, 175, 90, 175);
+  
 }
