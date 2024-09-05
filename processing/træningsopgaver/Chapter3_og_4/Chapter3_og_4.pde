@@ -22,7 +22,7 @@ void setup() {
 void draw() {
 
   // Clear the background to white
-  background(255);
+// background(255);
 
   // Rectangle dimensions
   float rectWidth = mouseX + 150;
