@@ -1,8 +1,3 @@
-/*
- The code in this sketch will not compile, as it referes to varables which have not yet been declared
- Please complete task 5 to get this to compile.
- */
-
 int r;
 int g;
 int b;
@@ -33,7 +28,6 @@ void draw() {
 
   //Add the code for 6.c here
   if (counter == 0) {
-
     r = (int)random(255);
     g = (int)random(255);
     b = (int)random(255);
