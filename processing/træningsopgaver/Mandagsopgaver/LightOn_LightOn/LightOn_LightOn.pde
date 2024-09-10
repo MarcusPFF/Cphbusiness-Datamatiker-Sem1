@@ -25,6 +25,7 @@ void draw() {
     background(0);
     fill(255);
   }
+  fill (100);
   rect(buttonX, buttonY, buttonSizeX, buttonSizeY);
 }
 
