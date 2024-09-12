@@ -44,4 +44,5 @@ void setup()
   b1--;
   c1--;
   print(a1+b1+c1);
+  
 }

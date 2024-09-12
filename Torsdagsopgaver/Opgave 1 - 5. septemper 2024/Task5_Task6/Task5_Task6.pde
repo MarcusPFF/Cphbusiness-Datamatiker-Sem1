@@ -41,4 +41,5 @@ void draw() {
 
   counter = frameCount % numberOfCircles == 0 ? 0 : counter+1;
   rowCounter = counter==0 ? rowCounter+1: rowCounter;
+  
 }

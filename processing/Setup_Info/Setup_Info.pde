@@ -6,6 +6,7 @@ String info;
 
 void setup()
 {
+  
   size(1280, 720);
   frameRate(60);
   goodmorning = "Goodmorning";
