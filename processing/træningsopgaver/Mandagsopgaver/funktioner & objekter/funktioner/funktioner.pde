@@ -1,3 +1,4 @@
+// https://github.com/Dat1Cphbusiness/Mandagsopgaver/blob/main/3.md
 void setup() {
   size(1000, 1000);
   println(numberSquared(16));
