@@ -1,6 +1,8 @@
 int syvTabel = 7;
 int x = 0;
-char TalletX = 'x';
+int y = 0;
+String space = " ";
+char talletX = 'x';
 int i = 0;
 
 void draw () {
@@ -11,10 +13,14 @@ void draw () {
    
    }
    */
-  while (x <= 10);
-  print(TalletX);
-   while (i < 10) {
-      i++;
+  while (y <= 10) {
+    while (x <= y) {
+      print(space);
+      print(talletX);
+      x++;
     }
-
+    y++;
+    x = 0;
+    println();
+  }
 }
