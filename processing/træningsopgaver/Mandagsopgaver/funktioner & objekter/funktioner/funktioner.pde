@@ -1,15 +1,22 @@
 // https://github.com/Dat1Cphbusiness/Mandagsopgaver/blob/main/3.md
+  float result = sqrt(50);
+
 void setup() {
   size(1000, 1000);
   println(numberSquared(16));
+  printEven(10);
   sum(20);
+  //kan man lave bruge sqrt i stedet for b * b? 
+  println(result);
 }
 
 void draw() {
+  
   ellipse(numberSquared(16), numberSquared(16), numberSquared(16), numberSquared(16));
   ellipse(numberSquared(10), numberSquared(10), numberSquared(10), numberSquared(10));
   ellipse(numberSquared(25), numberSquared(25), numberSquared(13), numberSquared(13));
 }
+//PRINTER OP TIL TYVE IKKE KUN EVEN (OOPSI)
 public void printEven(int maxNumber) {
   if (maxNumber < 0) {
     println("Please only enter positive numbers");
