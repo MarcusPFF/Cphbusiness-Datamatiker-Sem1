@@ -7,8 +7,8 @@ void setup() {
   printEven(10);
   sum(20);
   //kan man lave bruge sqrt i stedet for b * b? 
-  println(result);
-}
+  println("/n" + result);
+} 
 
 void draw() {
   
@@ -48,6 +48,6 @@ public int numberSquared(int b) {
 public int sum(int number) {
   for (int c = 0; c <= number; c++) {  
     print(c);
-  }
+  }  
   return(number);
 }
