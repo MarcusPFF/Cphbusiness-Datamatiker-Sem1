@@ -1,3 +1,6 @@
+Square[] squares = new Square[15];
+
 void setup() {
-  Square[] block = new Square[5];
+  fillMyArray();
+
 }
