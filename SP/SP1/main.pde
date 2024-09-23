@@ -14,12 +14,13 @@ void setup()
 }
 
 void draw() {
-  background(0, 70, 100);
+  background(0, 130, 225);
 
   //Drawing
   myGrass.displayGrass();
   myCow.cowMoveOnGrass();
   myCow.display(myCow.cowPosX, myCow.cowPosY);
+  mySun.mouseOverSun();
   mySun.display();
   mySun.sunMove();
 }

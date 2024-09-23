@@ -41,7 +41,7 @@ class Grass {
   void displayGrass() {
     // Grass
     rectMode(CENTER);
-    grassColor = color(0, 80, 0);
+    grassColor = color(0, 180, 0);
     fill(grassColor);
     rect(width-width, height-height/6, width*2, height-height/1.6);
 

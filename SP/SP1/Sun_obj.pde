@@ -1,30 +1,42 @@
-
-
 class Sun {
 
   //Instance variables
-
   int sunSpeed = 2;
   int sunColor;
   float sunX;
+  float sunY;
+  int sunSize = 200;
+
+  Sun() {
+    sunX = 100;
+    sunY = 50;
+    sunColor = color(225, 225, 0);
+  }
 
   void display() {
     strokeWeight(0.3);
     ellipseMode(CENTER);
-    colorMode(RGB, 100);
-    sunColor = color(100, 100, 0);
+    colorMode(RGB, 225);
     fill(sunColor);
-    ellipse(sunX, height-height, 200, 200);
+    ellipse(sunX, sunY, sunSize, sunSize);
   }
 
   void sunMove() {
     sunX = sunX + sunSpeed;
-    if (sunX > width+300)
+    if (sunX > width+100)
     {
       sunSpeed = -sunSpeed;
-    }
-    if (sunX < width-width-300) {
+    } else if (sunX < -100) {
       sunSpeed = 2;
+    }
+  }
+
+  void mouseOverSun() {
+
+    if (dist(mouseX, mouseY, sunX, sunY) < sunSize / 2) {
+      sunColor = color(0, 0, 100);
+    } else {
+      sunColor = color(225, 225, 0);
     }
   }
 }
