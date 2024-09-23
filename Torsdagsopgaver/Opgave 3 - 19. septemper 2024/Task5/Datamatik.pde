@@ -29,7 +29,7 @@ void setup() {
   println(checkClassmates(student1, student6));
 }
 
-
+//equals compare Strings
 boolean isClassmates(Student student1, Student student2) {
   return student1.datamatikerTeam.equals(student2.datamatikerTeam);
 }

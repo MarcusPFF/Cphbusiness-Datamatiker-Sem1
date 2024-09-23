@@ -1,10 +1,10 @@
 void setup() {
- sum(10); 
+  sum(10);
 }
 
 void sum(int x) {
-println(x);
+  println(x);
   x--;
   if (x >= 0)
-  sum(x);
+    sum(x);
 }
