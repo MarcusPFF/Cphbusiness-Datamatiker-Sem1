@@ -1,12 +1,12 @@
 
 
 class Sun {
-  
-//Instance variables
 
-int sunSpeed = 2;
-int sunColor;
-float sunX;
+  //Instance variables
+
+  int sunSpeed = 2;
+  int sunColor;
+  float sunX;
 
   void display() {
     strokeWeight(0.3);

@@ -6,7 +6,6 @@ class Square {
     height = h;
   }
 
-
   int getArea() {
     return height * height;
   }

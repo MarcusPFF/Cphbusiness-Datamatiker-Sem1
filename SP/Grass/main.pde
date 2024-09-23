@@ -1,3 +1,4 @@
+
 //Creating classes in global scope
 Cow myCow = new Cow();
 Sun mySun = new Sun();
