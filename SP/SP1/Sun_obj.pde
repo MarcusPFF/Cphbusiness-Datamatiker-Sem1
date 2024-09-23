@@ -32,9 +32,12 @@ class Sun {
   }
 
   void mouseOverSun() {
+    float r = random(255);
+    float g = random(255);
+    float b = random(255);
 
     if (dist(mouseX, mouseY, sunX, sunY) < sunSize / 2) {
-      sunColor = color(0, 0, 100);
+      sunColor = color(r, g, b);
     } else {
       sunColor = color(225, 225, 0);
     }
