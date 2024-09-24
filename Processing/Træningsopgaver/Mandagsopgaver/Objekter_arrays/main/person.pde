@@ -40,12 +40,13 @@ class Person {
   }
 
   int averageAge(Person[] persons) {
+
     for (int i = 0; i < persons.length; i++) {
       if (persons[i] != null) {
         averageAge += persons[i].getAge();
         count++;
       }
     }
-    return (count > 0) ? (averageAge / count) : 0; // Return average or 0 if no persons
+    return (averageAge / count);
   }
 }
