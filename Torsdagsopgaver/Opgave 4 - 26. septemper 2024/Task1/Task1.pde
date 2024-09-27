@@ -2,10 +2,11 @@ int[] arr = { 28, 230, 9, 310, 72};
 int x;
 
 int getRandom() {
-  return x = int(random(0, 5));
+   x = int(random(0, 5));
+   return arr[x];
 }
 
 void setup() {
-  getRandom();
-  println(arr[x]);
+  println(getRandom());
+
 }
