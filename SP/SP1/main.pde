@@ -1,5 +1,5 @@
 
-//Creating classes in global scope
+//Creating objects in global scope
 Cow myCow = new Cow();
 Sun mySun = new Sun();
 Grass myGrass = new Grass();
@@ -9,18 +9,20 @@ void setup()
 {
   size(1280, 720);
   frameRate(60);
+  //Greetings
   newInfo.Greetings();
+  //Load image
   myGrass.getGrassImage();
 }
 
 void draw() {
   background(0, 130, 225);
 
-  //Drawing
+  //Drawings
   myGrass.displayGrass();
   myCow.cowMoveOnGrass();
   myCow.display(myCow.cowPosX, myCow.cowPosY);
   mySun.mouseOverSun();
   mySun.display();
-  mySun.sunMove();
+  mySun.sunX = mySun.sunMove(mySun.sunX, mySun.sunSpeed);
 }

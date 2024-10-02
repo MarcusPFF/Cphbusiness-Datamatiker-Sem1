@@ -1,11 +1,12 @@
 class Cow {
-  
-  //Cow animation variables
+
+  //Cow animation instance variables
   int cowPosX = (int)random(0, 1280);
   int cowPosY = (int)random(468, 720);
   int cowSpeedX = 3;
   int cowSpeedY = 2;
- 
+
+  //Method for moving the cow on the grass
   void cowMoveOnGrass() {
     cowPosX += cowSpeedX;
     cowPosY += cowSpeedY;
@@ -19,8 +20,9 @@ class Cow {
       cowSpeedY = -cowSpeedY;
     }
   }
-  
-   void display(int x, int y) {
+
+  //Method for displaying the cow
+  void display(int x, int y) {
     // Body
     strokeWeight(2);
     fill(255, 255, 255); // White color
@@ -72,9 +74,7 @@ class Cow {
     stroke(0); // Black outline
     line(x - 60, y, x - 70, y - 20); // Tail line
     noFill();
-    strokeWeight(3);
+    strokeWeight(3); // Black outline a little thicker
     ellipse(x - 70, y - 20, 10, 10); // Tail tuft
   }
-  
-  
 }

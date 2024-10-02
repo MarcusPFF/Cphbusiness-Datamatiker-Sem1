@@ -1,4 +1,4 @@
-//Grass zone
+//Declaring variables for grass zone
 int grassStartX;
 int grassEndX;
 int grassStartY;
@@ -14,20 +14,20 @@ class Grass {
   int i;
   PImage grass;
 
-
+  //Method for getting grass image
   void getGrassImage() {
-    //Grass setup
     grass = loadImage("grass.png");
     grassPosX = new float[staticGrass];
     grassPosY = new float[staticGrass];
 
-
-    for (int i = 0; i < staticGrass; i++) //Loop that makes random grassPosX and grassPosY
+    //Loop that makes random grassPosX and grassPosY
+    for (int i = 0; i < staticGrass; i++)
     {
+      //Storing values in array
       grassPosX[i] = random(0, width);
       grassPosY[i] = random(height- height / 2.5, height);
     }
-
+    //resizing grass image
     grass.resize(100, 100);
 
     // Declaring and initializing variables
@@ -37,9 +37,8 @@ class Grass {
     grassEndY = height / 1.6;
   }
 
-
+  //Method for displaying grass
   void displayGrass() {
-    // Grass
     rectMode(CENTER);
     grassColor = color(0, 180, 0);
     fill(grassColor);

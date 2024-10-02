@@ -6,18 +6,21 @@ class Sun {
   float sunX;
   float sunY;
   int sunSize = 200;
-  float r = 255; //color r,g,b
+  //color RGB
+  float r = 255;
   float g = 0;
   float b = 0;
   float colorSpeed = 10; // Adjust the speed of color transitions
   int colorPhase = 0;
 
+  //Default constructor for the Sun
   Sun() {
     sunX = 100;
     sunY = 50;
     sunColor = color(225, 225, 0);
   }
 
+  // Method for displaying the sun
   void display() {
     strokeWeight(0.3);
     ellipseMode(CENTER);
@@ -26,16 +29,18 @@ class Sun {
     ellipse(sunX, sunY, sunSize, sunSize);
   }
 
-  void sunMove() {
+  //Method for moving the sun
+  float sunMove(float sunX, float sunSpeed) {
     sunX = sunX + sunSpeed;
-    if (sunX > width+100)
-    {
+    if (sunX > width + 100) {
       sunSpeed = -sunSpeed;
     } else if (sunX < -100) {
       sunSpeed = 2;
     }
+    return sunX;
   }
 
+  //Method for changing the color in a spectrum like cycle when mouse is hovering over it.
   void mouseOverSun() {
     if (dist(mouseX, mouseY, sunX, sunY) < sunSize / 2) {
       // Cycle through the phases of RGB transitions
