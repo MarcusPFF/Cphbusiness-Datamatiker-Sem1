@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class MyDieProgram{
+public class MyDiceProgram{
 	public static void main(String[] args) {
 		Die newDie = new Die();
 		for (int i = 0; i < 6; i++) {

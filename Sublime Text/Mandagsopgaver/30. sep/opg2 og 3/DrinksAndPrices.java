@@ -5,7 +5,7 @@ public class DrinksAndPrices {
 		printNameAndPrices();
 	}
 
-	static void printNameAndPrices() {
+	public static void printNameAndPrices() {
         // Create an ArrayList to store Drinks objects
 		ArrayList<Drinks> drinklist = new ArrayList<>();
 		drinklist.add(new Drinks("Tuborg Classic", 20)); 
@@ -15,7 +15,7 @@ public class DrinksAndPrices {
 
 		System.out.println("Drinks and prices:");
 		for (int i = 0; i < drinklist.size(); i++) {
-			System.out.println(drinklist.get(i)); 
+			System.out.println(drinklist.get(i).name + " - $" + drinklist.get(i).price); 
 		}
 	}
 }
