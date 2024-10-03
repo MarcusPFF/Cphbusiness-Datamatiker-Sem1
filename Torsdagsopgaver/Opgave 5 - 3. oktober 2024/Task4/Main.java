@@ -1,16 +1,15 @@
 import java.util.ArrayList;
 
 public class Main {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+        ArrayList<String> actions = new ArrayList<>();
+        actions.add("1) Start game");
+        actions.add("2) Resume game");
+        actions.add("3) Pause game");
+        actions.add("4) End game");
 
-		ArrayList<String> gameActions = new ArrayList<>();
-		gameActions.add("Start Game");
-		gameActions.add("Resume Game");
-		gameActions.add("Pause Game");
-		gameActions.add("End game");
+        GameMenu gameMenu = new GameMenu(actions);
 
-		GameMenu menu = new GameMenu(gameActions);
-
-		menu.displayMenu();
-	}
+        gameMenu.displayMenu();
+    }
 }

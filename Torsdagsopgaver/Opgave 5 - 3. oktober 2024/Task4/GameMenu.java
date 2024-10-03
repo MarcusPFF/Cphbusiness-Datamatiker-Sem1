@@ -1,15 +1,16 @@
+import java.util.ArrayList;
 
 public class GameMenu {
 
-	ArrayList<String> actions = new Arraylist<>();
+    private ArrayList<String> actions;
 
-	GameMenu(ArrayList<String> actions) {
-		this.actions = actions;
-	}
+    public GameMenu(ArrayList<String> actions) {
+        this.actions = actions;
+    }
 
-	public void displayMenu() {
-		for (String action : actions) {
-			System.out.println(action);
-		}
-	}
+    public void displayMenu() {
+        for (String options : actions) {
+            System.out.println(options);
+        }
+    }
 }
