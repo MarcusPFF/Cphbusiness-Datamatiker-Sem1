@@ -5,18 +5,16 @@ public class GuessANumber {
     private static int rnd_number;
 
     public static void main(String[] args) {
-        // Pick a random number
+
         Random random = new Random();
         rnd_number = random.nextInt(100) + 1;
         System.out.println("I'm thinking of a number between 1 and 100 (including both).");
         System.out.println("Can you guess what it is?...");
 
-        // Create scanner outside of the method
         Scanner scanner = new Scanner(System.in);
         
         makeAGuess(scanner);
         
-        // Close the scanner after use
         scanner.close();
     }
 
@@ -26,11 +24,11 @@ public class GuessANumber {
         while (!correctGuess) {
             System.out.print("Lets try to play this game, enter your guess.");
 
-            // Check if the input is numeric
+            // Check input
             if (scanner.hasNextInt()) {
                 int userGuess = scanner.nextInt();
 
-                // Compare it with the random number
+                // Compare with rnd_number
                 if (userGuess < 1 || userGuess > 100) {
                     System.out.println("Please guess a number between 1 and 100.");
                 } else if (userGuess < rnd_number) {
@@ -42,7 +40,7 @@ public class GuessANumber {
                     correctGuess = true;
                 }
             } else {
-                // Handle non-integer input
+                // Handle wrong input
                 System.out.println("That's not a valid number! Please enter a number between 1 and 100.");
                 scanner.next();
             }
