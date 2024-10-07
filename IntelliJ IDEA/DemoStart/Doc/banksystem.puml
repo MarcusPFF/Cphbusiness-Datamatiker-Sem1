@@ -1,0 +1,21 @@
+@startuml
+!pragma layout smetana
+
+class Costumer {
+- String name
+- int balance
++ void setName(String name)
++ String getName()
+}
+
+class Bank {
+- String name
+- ArrayList<Costumer> costumers
++ void addCostumer(Customer customer)
+
+
+}
+
+bank *-- Costumer
+@enduml
+
