@@ -12,9 +12,16 @@ public class Main {
         Room newRoom3 = new Room(50, 8);
         Room newRoom4 = new Room(40, 10);
 
-        //Instantiating new building objects
-        Building newBuilding = new Building(new ArrayList<>(), 6);
-        Building newBuilding2 = new Building(new ArrayList<>(), 1);
+        ArrayList<Room> listOne = new ArrayList<>();
+        listOne.add(newRoom);
+        listOne.add(newRoom2);
+        ArrayList<Room> listTwo = new ArrayList<>();
+        listTwo.add(newRoom3);
+        listTwo.add(newRoom4);
+
+        // Instantiating new building objects
+        Building newBuilding = new Building(listOne, 6);
+        Building newBuilding2 = new Building(listTwo, 1);
 
         //Adding rooms to building object
         newBuilding.getRooms().add(newRoom);
