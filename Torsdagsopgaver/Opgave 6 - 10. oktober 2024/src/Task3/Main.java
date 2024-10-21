@@ -51,9 +51,6 @@ public class Main {
 
     //Checking if number of floors >= getRooms and returning the boolean value
     private static boolean isNormal(Building newBuilding) {
-        if (newBuilding.getNumberOfFloors() >= newBuilding.getRooms().size()) {
-            return true;
-        }
-        return false;
+        return newBuilding.getNumberOfFloors() <= newBuilding.getRooms().size();
     }
 }
