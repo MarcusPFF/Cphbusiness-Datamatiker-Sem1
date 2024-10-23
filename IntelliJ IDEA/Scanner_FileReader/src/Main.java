@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 import java.io.File;
 
@@ -13,7 +14,10 @@ public class Main {
             }
 
         } catch (FileNotFoundException e) {
-            System.out.println("File was not found");
+            System.out.println("file" + myFile + " not found");
+
+        } finally {
+            System.out.println("File read : " + myFile);
         }
 
         Player.readPlayers();
