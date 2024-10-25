@@ -16,13 +16,10 @@ public class Cinema {
         this.seats = new String[rows][seats];
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < seats; j++) {
-                if (i == 0 && j == 0) {
-                    this.seats[i][j] = "X";
-                } else {
-                    this.seats[i][j] = "0";
-                }
+                this.seats[i][j] = "0";
             }
         }
+        this.seats[0][0] = "X";
     }
 
     //Getter

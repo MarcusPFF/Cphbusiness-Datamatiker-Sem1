@@ -9,7 +9,7 @@ public class FindFemFejl {
     2. missing [0] på seats.length
     3. added two for loop in constructor and if statements to
     4. initialising of my array in constructor
-    5. Reservation cancels works now.
+    5. Reservation cancels works now (false and true)
 
      */
     public static void main(String[] args) {
